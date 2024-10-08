@@ -44,3 +44,10 @@ Route::get('/pass-array', function () {
         'tasks' => $tasks
         ]);
 });
+
+//
+Route::get('/request-test', function () {
+    return view('request-inputs', [
+    'title' => request('title'),
+    ]);
+});
